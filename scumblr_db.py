@@ -30,7 +30,7 @@ while True:
             d[col[0]] = row[idx]
         return d
 
-	# Get the last ID from the JSON file
+    # Get the last ID from the JSON file
     def get_last_id(data):
         last_id = None
         for i in range(0, len(data)):
@@ -38,7 +38,7 @@ while True:
                 last_id = data[i]["id"]
         return last_id
 
-	# Connect to the database
+    # Connect to the database
     def db_connect():
         try:
             print "Starting database connection..."
